@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Consultations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url(images/bg_const.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(4px);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b9ec93;
+    color: #050000;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #040404;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #111010;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    color: #020202;
+}
+
+.hero {
+    background: transparent;
+    backdrop-filter: blur(6px);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 18%, 96%);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #060303;
+    font-family:serif;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #0a0909;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #0d0b0b;
+    border: none;
+    padding: 10px
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Experts</a></li>
+                <li><a href="consultation.html "target="_blank">Consultations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Find Your Expert</h1>
+            <p>Get advice from industry experts and take your freelancing career to the next level.</p>
+            <button onclick="document.location='consultation.html'"target="blank">Get Started</button>
+        </section>
+        <section class="features">
+            <h2>Our Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Payments</h3>
+                    <p>Our platform ensures secure and reliable payments for all consultations.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-user"></i>
+                    <h3>Verified Experts</h3>
+                    <p>Our experts are verified and experienced in their fields, ensuring high-quality consultations.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Choose from a variety of scheduling options to fit your busy schedule.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"I was blown away by the quality of the consultation. The expert was knowledgeable and helpful."</p>
+                    <span>— John D.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"I was able to get the advice I needed to take my business to the next level. Thank you!"</p>
+                    <span>— Jane S.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"The platform was easy to use and the expert was responsive and helpful."</p>
+                    <span>— Bob T.</span>
+                </div>
+            </div>
+        </section>
+        <section class="call-to-action">
+            <h2>Get Started Today</h2>
+            <p>Sign up for our platform and start getting the advice you need to succeed.</p>
+            <button onclick="document.location='login.html'">Sign Up</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Freelance Consultations</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

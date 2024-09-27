@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d0d8f0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.navbar .image {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+.navbar .buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.navbar .buttons .login {
+    color: #000;
+}
+.navbar .buttons .request-demo {
+    background-color: #001f7f;
+    color: #fff;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.hero-text {
+    max-width: 600px;
+}
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+.hero-text p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+.hero-buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.hero-buttons .join-now {
+    background-color: #001f7f;
+    color: #fff;
+}
+.hero-buttons .exclusive-access {
+    border: 2px solid #001f7f;
+    color: #001f7f;
+}
+.trustpilot {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.trustpilot i {
+    color: #00b67a;
+    margin-right: 5px;
+}
+.trustpilot span {
+    font-size: 16px;
+}
+.hero-image {
+    position: relative;
+}
+.hero-image img {
+    border-radius: 50%;
+    width: 500px;
+    height: auto;
+}
+.hero-image .small-image {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    border: 5px solid #0b0b0b;
+}

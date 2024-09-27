@@ -1,0 +1,277 @@
+<html>
+<head>
+    <title>Freelancing Journey</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/bgindex.png);
+            background-size: cover;
+            background-position: fit;
+            background-attachment: fixed;
+
+        }
+        .container {
+            width: auto;
+            height: auto;
+            margin: 5px;
+            padding: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .navbar .brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #fff9f9;
+            font-size: 16px;
+        }
+        .navbar .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar .nav-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .navbar .nav-buttons .login {
+            background-color: #001f7f;
+            color: #fcfbfb;
+            border: 1px solid #000;
+        }
+        .navbar .nav-buttons .request-demo {
+            background-color: #001f7f;
+            color: #fff;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+        .hero .text {
+            max-width: 600px;
+        }
+        .hero .text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin: 0 0 20px;
+            color: #e9ecf5;
+        }
+        .hero .text p {
+            font-size: 18px;
+            margin: 0 0 30px;
+            color: #edeff4;
+        }
+        .hero .text .buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            color: #edeff4;
+        }
+        .hero .text .buttons a {
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .hero .text .buttons .join-now {
+            background-color: #001f7f;
+            color: #fff;
+        }
+        .hero .text .buttons .exclusive-access {
+            background-color: #001f7f;
+            color: #edeff4;
+            border: 1px solid #001f7f;
+        }
+        .hero .text .rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #e9ecf5;
+        }
+        .hero .text .rating i {
+            color: #f5a623;
+        }
+        .hero .image {
+            position: relative;
+            height: 100%;
+        }
+        .hero .image img {
+            border-radius: 50%;
+            width: 100px;
+            height: 0px;
+        }
+        .hero .image .small-image {
+            position: absolute;
+            top: 20px;
+            right: -50px;
+            border-radius: 50%;
+            width: 150px;
+            height: auto;
+            border: 5px solid #d0d8f0;
+        }
+        .container00 {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+           align-content: end;
+        }
+        .overlay00 {
+            position: absolute;
+            top: auto;
+            left: auto;
+            width: 100%;
+            height: 100%;
+            background-image: url(images/bgind1.avif);
+            backdrop-filter: blur(5px);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .header-text00 {
+            color: white;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+        .header-text00 p:first-child {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+        .header-text00 h1 {
+            font-size: 48px;
+            margin: 0 0 20px 0;
+        }
+        .header-text00 p:last-child {
+            font-size: 18px;
+            margin: 0;
+        }
+        .cards00 {
+            display: flex;
+            gap: 20px;
+        }
+        .card00 {
+            background-color: #00a000;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            text-align: left;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card00:hover {
+            background-color: #008000;
+        }
+        .card00 h2 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+        .card00 p {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+        }
+        .card00 a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .header00 {
+            position: absolute;
+            top: auto;
+            left: auto;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <div class="brand">
+            <img src="images/logo.png" alt="Brand Logo">
+        </div>
+            <div class="nav-links">
+              <a class="Home" href="index.html">Home</a>
+              <a class="about" href="about.html">About</a>
+              <a class="Features" href="features.html">features</a>
+              <a class="Testimonial" href="Testimonial.html">Testimonial</a>
+              <a class="contact" href="contact.html">Contact</a>
+
+            </div>
+            <div class="nav-buttons">
+                <a class="login" href="login.html">Login</a>
+                <a class="request-demo" href="request-demo.html">Request Demo</a>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="text">
+                <h1>Empower Your Freelancing Journey Today</h1>
+                <p>Unlock your potential and connect with top freelancers and clients across the globe!</p>
+                <div class="buttons">
+                    <a class="join-now" href="jobs.html">join now</a>
+                    <a class="exclusive-access" href="profile.html">Get Exclusive Access</a>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.8/5 Rating</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container00"></div>
+        <div class="header00">
+            <p>For clients</p>
+        </div>
+        <div class="overlay00">
+            <div class="header-text00">
+                <h1>Find talent your way</h1>
+                <p>Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations.</p>
+            </div>
+            <div class="cards00">
+                <div class="card00" onclick="window.location.href='jobs.html'">
+                    <h2>Post a job and hire a pro</h2>
+                    <p>Talent Marketplace™</p>
+                    <a href="#">→</a>
+                </div>
+                <div class="card00" onclick="window.location.href='projects.html'">
+                    <h2>Browse and buy projects</h2>
+                    <p>Project Catalog™</p>
+                    <a href="#">→</a>
+                </div>
+                <div class="card00" onclick="window.location.href='consultation.html'">
+                    <h2>Get advice from an industry expert</h2>
+                    <p>Consultations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

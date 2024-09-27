@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Contact Us</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Contact us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #21d3be, rgb(239, 35, 35));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #fbfabf;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            box-sizing: border-box;
+        }
+        .navbar .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .navbar .auth-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .auth-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .navbar .auth-links .request-demo {
+            background-color: #1a2e6c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .contact-form {
+            background-color: #000000;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(253, 252, 252, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        .contact-form h1 {
+            font-size: 36px;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .contact-form p {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 30px;
+        }
+        .contact-form label {
+            display: block;
+            color: white;
+            text-align: left;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form input[type="checkbox"] {
+            width: auto;
+            margin-right: 100px;
+        }
+        .contact-form .submit-btn {
+            background-color: #1a2e6c;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="iilm"> 
+        </div>
+        <div class="nav-links">
+            <a class="Home" href="index.html">Home</a>
+            <a class="about"href="about.html"target="_blank">About</a>
+            <a class="feature"href="features.html"target="_blank">Features</a>
+            <a class="testimonial"href="Testimonial.html"target="_blank">Testimonial</a>
+            <a class="contact" href="contact.html">Contact</a>
+
+        </div>
+        <div class="auth-links">
+            <a class="login" href="login.html">Login</a>
+            <a class="request-demo" href="request-demo.html">Request Demo</a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h1>Contact us</h1>
+        <p>Our friendly team would love to hear from you.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="b9b22d85-3fa9-4561-b26e-9bce8e78f586">
+        
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <textarea name="message" required></textarea>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <button type="submit">Submit Form</button>
+        
+        </form>
+    </div>
+</body>
+</html>

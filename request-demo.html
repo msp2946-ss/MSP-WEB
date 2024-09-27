@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Ask for Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a0b9f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #adef8d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            box-sizing: border-box;
+        }
+        .navbar .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .navbar .auth-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .auth-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .navbar .auth-links .request-demo {
+            background-color: #1a2e6c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .contact-form {
+            background-color: #a0b9f1;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        .contact-form h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .contact-form p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .contact-form label {
+            display: block;
+            text-align: left;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .contact-form .submit-btn {
+            background-color: #1a2e6c;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="Brand Logo">
+        </div>
+        <div class="nav-links">
+            <a class="Home" href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Testimonial</a>
+            <a class="contact" href="contact.html">Contact</a>
+
+        </div>
+        <div class="auth-links">
+            <a class="login" href="login.html">Login</a>
+            <a class="request-demo" href="request-demo.html">Request Demo</a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h1>Contact us</h1>
+        <p>Our friendly team would love to hear from you.</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Full Name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your message...."></textarea>
+            <div>
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I accept the terms</label>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
